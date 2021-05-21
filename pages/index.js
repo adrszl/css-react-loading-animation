@@ -1,7 +1,8 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [loadingState, updateLoadingState] = useState(true);
+  const [contentState, updateContentState] = useState({});
 
   const content = {
     header: `So, how 'bout them Knicks?`,
@@ -9,21 +10,29 @@ export default function Home() {
     list: [
       `Yes! In your face, Gandhi!`,
       `So I really am important? How I feel when I'm drunk is correct?`,
-      `Who are those horrible orange men?`
-    ]
-  }
+      `Who are those horrible orange men?`,
+    ],
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      updateContentState(content);
+      updateLoadingState(false);
+    }, 2000);
+  }, []);
 
   return (
-    <main>
-      <h1>{ content.header }</h1>
-      <p>{ content.intro }</p>
-      <ul>
-        { content.list.map((item, i) => {
-          return (
-            <li key={i}>{ item }</li>
-          )
-        })}
-      </ul>
-    </main>
-  )
+    <div className="container">
+      <main>
+        <h1>{contentState.header}</h1>
+        <p>{contentState.intro}</p>
+        <ul>
+          {Array.isArray(contentState.list) &&
+            contentState.list.map((item, i) => {
+              return <li>{item}</li>;
+            })}
+        </ul>
+      </main>
+    </div>
+  );
 }
