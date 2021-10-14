@@ -2,7 +2,15 @@ import { useState, useEffect } from "react";
 
 export default function Home() {
   const [loadingState, updateLoadingState] = useState(true);
-  const [contentState, updateContentState] = useState({});
+  const [contentState, updateContentState] = useState({
+    header: 'Loading',
+    intro: 'Loading',
+    list: [
+      'Loading',
+      'Loading',
+      'Loading'
+    ]
+  })
 
   const content = {
     header: `So, how 'bout them Knicks?`,
@@ -23,7 +31,7 @@ export default function Home() {
 
   return (
     <div className="container">
-      <main>
+      <main className={loadingState ? 'loading' : ''}>
         <h1>{contentState.header}</h1>
         <p>{contentState.intro}</p>
         <ul>
