@@ -14,13 +14,12 @@ export const PlaceholderLoader = () => {
     })
 
     const content = {
-        header: `React loading animation for placeholder`,
-        subHeader: `So, how 'bout them Knicks?`,
-        intro: `What are their names? I'm Santa Claus! This opera's as lousy as it is brilliant! Your lyrics lack subtlety. You can't just have your characters announce how they feel. That makes me feel angry! Good news, everyone! I've taught the toaster to feel love!`,
+        header: `Lorem Ipsum`,
+        subHeader: `Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...`,
+        intro: `There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain...`,
         list: [
-            `Yes! In your face, Gandhi!`,
-            `So I really am important? How I feel when I'm drunk is correct?`,
-            `Who are those horrible orange men?`,
+            `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat sagittis lectus, quis pretium arcu sagittis quis. Proin pretium convallis neque, non tincidunt leo iaculis at. Sed enim velit, tristique rhoncus purus eget, tempus pretium augue. Mauris magna lacus, egestas ac mauris eget, posuere imperdiet diam. Etiam a est pulvinar, aliquet purus at, cursus sapien. Nunc vitae justo tristique orci tempus varius nec ut risus. Duis ac ornare leo, a commodo enim. Aenean pharetra quam libero, ut imperdiet sem porttitor quis. Proin gravida sed urna iaculis dapibus. Sed eleifend lorem lacus, et lobortis tellus blandit id. Sed maximus leo id ipsum placerat, ut gravida est hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nec dui at tortor tempor scelerisque tempor quis ex. Duis ac consequat lacus. Ut viverra sed metus eget dignissim.`,
+            `In hac habitasse platea dictumst. Phasellus metus urna, convallis in imperdiet tincidunt, tempor eget leo. Nulla facilisis lacus nec tortor malesuada rutrum ultrices sit amet erat. Duis consequat diam nec risus consectetur, porttitor fringilla dui porttitor. Maecenas pretium vulputate ipsum at tempor. Nunc dignissim nisl erat, sit amet luctus nisl auctor cursus. Ut rutrum dictum rutrum. Aenean nisl ipsum, molestie nec tincidunt non, iaculis in metus. Donec leo purus, laoreet sed faucibus sit amet, convallis ut leo. Donec venenatis id augue vel maximus. Proin eleifend vel magna id tincidunt. Maecenas quis erat rutrum, ullamcorper libero ullamcorper, venenatis tortor. Proin venenatis commodo dui sit amet tempor. Curabitur ornare felis nec leo auctor fringilla. Nunc congue euismod ipsum.`,
         ]
     };
 
