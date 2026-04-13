@@ -14,3 +14,8 @@ export const Primary = {
     args: {
     },
 };
+
+export const Image = {
+    args: {
+    },
+};
