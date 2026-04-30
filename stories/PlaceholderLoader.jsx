@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-export const PlaceholderLoader = ({ header, subheader, intro, listItems }) => {
+export const PlaceholderLoader = ({ contentType, header, subheader, intro, listItems }) => {
     const [loadingState, updateLoadingState] = useState(true);
     const [contentState, updateContentState] = useState({
         header: 'Loading',
@@ -31,6 +31,7 @@ export const PlaceholderLoader = ({ header, subheader, intro, listItems }) => {
     return (
         <div className="container">
             <main className={loadingState ? 'loading' : ''}>
+                {contentType === 'image' && <img src="https://placehold.co/600x400" />}
                 {header && <h1>{contentState.header}</h1>}
                 {subheader && <h2>{contentState.subHeader}</h2>}
                 {intro && <p>{contentState.intro}</p>}

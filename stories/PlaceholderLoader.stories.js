@@ -18,6 +18,7 @@ export default {
 
 export const Primary = {
     args: {
+        contentType: 'paragraph-text',
         header: true,
         subheader: true,
         intro: true,
@@ -27,5 +28,10 @@ export const Primary = {
 
 export const Image = {
     args: {
+        contentType: 'image',
+        header: false,
+        subheader: true,
+        intro: false,
+        listItems: 0
     },
 };
